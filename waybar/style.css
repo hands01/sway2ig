@@ -1,0 +1,101 @@
+* {
+    font-family: "JetBrains Mono", monoscope;
+    font-weight: 800;
+    font-size: 13px;
+    color: #F6F5F4;
+}
+
+window#waybar {
+    background: #1f1f1f;
+    border: 0px solid #1b4d3e;
+    border-radius: 0px;
+    margin: 6px 8px;
+    padding: 4px 8px;
+}
+
+#workspaces,
+#mpris,
+#battery,
+#wireplumber,
+#network,
+#clock,
+#tray,
+#custom-launcher,
+#custom-lock {
+    background: transparent;
+    border: 0px solid #1b4d3a;
+    margin: 0 4px;
+    padding: 4px 2px;
+    border-radius: 0;
+}
+
+#workspaces {
+    padding: 0 4px;
+}
+
+#workspaces button {
+    padding: 0px 3px;
+    margin: 4px 1px;
+    border-radius: 0px;
+    background: transparent;
+    color: #665447;
+    font-size: 5px;
+}
+
+#workspaces button.focused {
+    color: #1b4d3e;
+    background: #1b4d3a;
+}
+
+#workspaces button:hover {
+    background: #3A2D24;
+    color: #D8B982;
+}
+
+#workspaces button.urgent {
+    background: #8C4A3A;
+    color: #F0D6A3;
+    border-radius: 0px;
+}
+
+#wireplumber.muted {
+    opacity: 0.55;
+}
+
+#custom-lock {
+    color: #F6F5F4;
+}
+
+#custom-lock:hover {
+    color: #E0B875;
+}
+
+#tooltip {
+    background: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #1b4d3a;
+    border-radius: 0px; 
+    padding: 8px;
+}
+
+/* Base style: inherits font family, size, and background from your bar theme */
+#custom-notification {
+    padding: 0 10px;
+    background: transparent;
+    color: @text; /* Uses your theme's default text variable */
+}
+
+/* When you have unread notifications: use your theme's primary accent color */
+#custom-notification.unread {
+    color: @accent; /* Or @selected, @warning depending on your specific sway theme variables */
+    font-weight: bold;
+}
+
+/* When muted: use a dimmed or deactivated color variable */
+#custom-notification.muted {
+    color: @muted; /* Or @insensitive, @dimmed */
+}
+
+
+
+

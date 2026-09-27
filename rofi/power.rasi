@@ -1,0 +1,65 @@
+/* ~/.config/rofi/horizontal.rasi */
+
+* {
+    background-color:      #282c34;
+    text-color:            #bbc2cf;
+}
+
+window {
+    location: center;
+    anchor:   north;
+    location: north;
+    width:    500;
+    height:   250;
+    padding:  5px;
+    children: [ listview ];
+    y-offset: 8;
+
+}
+
+listview {
+      layout:           horizontal;
+      spacing:          13px;      /* Gap between the boxes */
+      lines:            4;         /* Number of visible boxes */
+      fixed-columns:    true;
+}
+
+element {
+      /* Perfect square dimensions that fit within the 500px width */
+      width:            105px;     
+      height:           400px;
+      
+      orientation:      vertical;  
+      alignment:        center;
+      padding:          20px 0px;
+      border-radius:    0px;
+      border:           2px;
+      border-color:     #1f4d3a;
+}
+
+
+horibox {
+    orientation: horizontal;
+    children:    [ prompt, entry, listview ];
+}
+
+listview {
+    layout:  horizontal;
+    spacing: 5px;
+    lines:   100;
+}
+
+entry {
+    expand: false;
+    width:  10em;
+}
+
+element {
+    padding: 0px 8px;
+}
+
+element selected {
+    background-color: #1b4d3e;
+    text-color:       #ffffff;
+}
+
