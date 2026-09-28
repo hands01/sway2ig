@@ -89,6 +89,7 @@ output * bg /home/arga/Documents/Wallpapers/beach.jpg fill
     bindsym $mod+Shift+q exec ~/.config/rofi/powermenu.sh
     bindsym $mod+Shift+n exec ~/.config/rofi/rofi-notifications.sh
 
+exec_always autotiling
 
 # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
